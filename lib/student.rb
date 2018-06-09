@@ -42,7 +42,7 @@ class Student
 
   def self.create(student_hash)
     binding.pry
-    student = Student.new(name, grade)
+    student = Student.new(student_hash[:name], student_hash[:grade])
     student.save
     student
   end
